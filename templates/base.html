@@ -1,0 +1,35 @@
+<html lang="en" dir="ltr">
+  <head>
+    {%block head%}
+    <meta charset="utf-8">
+    <title>{% block title %}Die Wiki Ap 5000{% endblock %}</title>
+
+
+    <meta name="description" content="Challenge yourself to the formiddable wikipedia challenge"/>
+    <!-- this is the description when searched under title //-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes"/>
+    <!-- this stops the webpage from shrinking to unreadable text -->
+
+    <link rel="stylesheet" href="{{url_for('static', filename = 'screen.css' )}}"/> <!-- ../ goes back file -->
+    <script src="{{url_for('static', filename='typingtext.js')}}"></script>
+    {% endblock %}
+  </head>
+
+  <body>
+  <!--  <img src="{{url_for('static', filename='screenbackground.jpg')}}" id="bg"/>-->
+    <div id="header"><img src="{{url_for('static', filename='header.png')}}"/></div>
+    <div id="container">
+    {% block content %}
+
+
+          <!--<img src="{{url_for('static', filename = 'Frame.png' )}}" class="frameborder" /> -->
+
+
+
+        {% endblock %}
+
+      </div>
+    <!--  <div id="logo"><img src="{{url_for('static', filename='logo.png')}}"/></div>-->
+  </body>
+</html>

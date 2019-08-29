@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Enter the next challenge{% endblock %}
+
+{% block content %}
+
+    <div id="menu">
+      <p> Welcome to reality {{alias}}<br>
+        You made it to {{prevchallenger}} exit <br><br>
+        <br><br><br> Please Enter the next exit to help save another soul</p>
+
+        <form action="/Confirm" method="post">
+
+        <div class="inputfield">
+          <p>
+            <label for="nxtchallenge">--&gt;</label>
+            <input type="text" id="challenge" name="challenge" required autofocus />
+          </p>
+
+          <input type="submit" value="SUBMIT" class="nextpage"/>
+
+          <div>
+        </form>
+
+
+
+    </div>
+
+  {%endblock%}

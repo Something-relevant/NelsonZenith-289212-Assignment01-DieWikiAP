@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Die Wiki App 5000{% endblock %}
+
+{% block content %}
+
+    <div id="menu">
+      <p>contacting challenger..........<br>
+        Creating pathways of infinite knowledge....................<br>
+        <br>When you finish click on submit a challnege
+        <br><br> Prepare yourself <br><br>
+        {{prevchallenger}} has challenged you to find <br><br>
+         {{challenge}}<br><br><br> PRESS BUTTON TO START </p>
+
+         <div id="Activate">
+           <p><a href="https://en.wikipedia.org/wiki/Special:random" class="bigbutton" target="_blank"><img src="" alt="" />START</a></p>
+         </div>
+
+
+         <a href="/submission" class="nextpage">&gt;&gt;&gt;Submit a challenge</a>
+
+
+         <!-- have a timer start and the completion url appear -->
+       </div>
+
+       <div id="Timer">
+         <h2>{{timer}}</h2>
+       </div>
+
+  {%endblock%}
